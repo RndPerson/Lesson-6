@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC7E25992592B35B008E5228 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E25982592B35B008E5228 /* MainViewController.swift */; };
-		AC7E259D2592B3C7008E5228 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E259C2592B3C7008E5228 /* SetupViewController.swift */; };
 		ACD8BC7F259137B500A7661D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8BC7E259137B500A7661D /* AppDelegate.swift */; };
 		ACD8BC81259137B500A7661D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8BC80259137B500A7661D /* SceneDelegate.swift */; };
 		ACD8BC83259137B500A7661D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8BC82259137B500A7661D /* ViewController.swift */; };
@@ -21,9 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AC7E25982592B35B008E5228 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		AC7E259C2592B3C7008E5228 /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
-		ACD8BC7B259137B500A7661D /* Memobay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memobay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACD8BC7B259137B500A7661D /* Lesson 6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lesson 6.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD8BC7E259137B500A7661D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACD8BC80259137B500A7661D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ACD8BC82259137B500A7661D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,21 +43,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AC7E25972592B333008E5228 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				AC7E25982592B35B008E5228 /* MainViewController.swift */,
-				ACD8BC82259137B500A7661D /* ViewController.swift */,
-				AC7E259C2592B3C7008E5228 /* SetupViewController.swift */,
-				ACD8BC94259139EC00A7661D /* CollectionCell */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
 		ACD8BC72259137B500A7661D = {
 			isa = PBXGroup;
 			children = (
-				ACD8BC7D259137B500A7661D /* Memobay */,
+				ACD8BC7D259137B500A7661D /* Lesson 6 */,
 				ACD8BC7C259137B500A7661D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,24 +54,25 @@
 		ACD8BC7C259137B500A7661D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ACD8BC7B259137B500A7661D /* Memobay.app */,
+				ACD8BC7B259137B500A7661D /* Lesson 6.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ACD8BC7D259137B500A7661D /* Memobay */ = {
+		ACD8BC7D259137B500A7661D /* Lesson 6 */ = {
 			isa = PBXGroup;
 			children = (
-				AC7E25972592B333008E5228 /* Controllers */,
+				ACD8BC94259139EC00A7661D /* CollectionCell */,
 				ACD8BC7E259137B500A7661D /* AppDelegate.swift */,
 				ACD8BC80259137B500A7661D /* SceneDelegate.swift */,
+				ACD8BC82259137B500A7661D /* ViewController.swift */,
 				ACD8BC84259137B500A7661D /* Main.storyboard */,
 				ACD8BC87259137B600A7661D /* Assets.xcassets */,
 				ACD8BC89259137B600A7661D /* LaunchScreen.storyboard */,
 				ACD8BC8C259137B600A7661D /* Info.plist */,
 				ACD8BC9B259150F200A7661D /* ImageViewController.swift */,
 			);
-			path = Memobay;
+			path = "Lesson 6";
 			sourceTree = "<group>";
 		};
 		ACD8BC94259139EC00A7661D /* CollectionCell */ = {
@@ -101,9 +87,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ACD8BC7A259137B500A7661D /* Memobay */ = {
+		ACD8BC7A259137B500A7661D /* Lesson 6 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ACD8BC8F259137B600A7661D /* Build configuration list for PBXNativeTarget "Memobay" */;
+			buildConfigurationList = ACD8BC8F259137B600A7661D /* Build configuration list for PBXNativeTarget "Lesson 6" */;
 			buildPhases = (
 				ACD8BC77259137B500A7661D /* Sources */,
 				ACD8BC78259137B500A7661D /* Frameworks */,
@@ -113,9 +99,9 @@
 			);
 			dependencies = (
 			);
-			name = Memobay;
+			name = "Lesson 6";
 			productName = "Lesson 6";
-			productReference = ACD8BC7B259137B500A7661D /* Memobay.app */;
+			productReference = ACD8BC7B259137B500A7661D /* Lesson 6.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -132,7 +118,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ACD8BC76259137B500A7661D /* Build configuration list for PBXProject "Memobay" */;
+			buildConfigurationList = ACD8BC76259137B500A7661D /* Build configuration list for PBXProject "Lesson 6" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -145,7 +131,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ACD8BC7A259137B500A7661D /* Memobay */,
+				ACD8BC7A259137B500A7661D /* Lesson 6 */,
 			);
 		};
 /* End PBXProject section */
@@ -172,10 +158,8 @@
 				ACD8BC83259137B500A7661D /* ViewController.swift in Sources */,
 				ACD8BC9925913EA400A7661D /* ImageCell.swift in Sources */,
 				ACD8BC9C259150F200A7661D /* ImageViewController.swift in Sources */,
-				AC7E25992592B35B008E5228 /* MainViewController.swift in Sources */,
 				ACD8BC7F259137B500A7661D /* AppDelegate.swift in Sources */,
 				ACD8BC81259137B500A7661D /* SceneDelegate.swift in Sources */,
-				AC7E259D2592B3C7008E5228 /* SetupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,13 +307,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Memobay/Info.plist;
+				INFOPLIST_FILE = "Lesson 6/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = shekarno.Memobay;
+				PRODUCT_BUNDLE_IDENTIFIER = "shekarno.Lesson-6";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -342,13 +326,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Memobay/Info.plist;
+				INFOPLIST_FILE = "Lesson 6/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = shekarno.Memobay;
+				PRODUCT_BUNDLE_IDENTIFIER = "shekarno.Lesson-6";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -358,7 +342,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ACD8BC76259137B500A7661D /* Build configuration list for PBXProject "Memobay" */ = {
+		ACD8BC76259137B500A7661D /* Build configuration list for PBXProject "Lesson 6" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ACD8BC8D259137B600A7661D /* Debug */,
@@ -367,7 +351,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ACD8BC8F259137B600A7661D /* Build configuration list for PBXNativeTarget "Memobay" */ = {
+		ACD8BC8F259137B600A7661D /* Build configuration list for PBXNativeTarget "Lesson 6" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ACD8BC90259137B600A7661D /* Debug */,

@@ -11,18 +11,9 @@ class ImageCell: UICollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView!
     
-    @IBOutlet weak var cardBack: UIView!
-    
     override func prepareForReuse () {
         imageView.image = nil
     }
-    
-    
-    func flipView () {
-        UIView.transition(from: cardBack, to: imageView,
-                          duration: 0.5,
-                   options: [.transitionFlipFromRight, .showHideTransitionViews],
-                   completion: nil)    }
     
     func setImageWithURLSession(photoModel: Photo, completion: @escaping (UIImage?) -> Void) {
         if let image = photoModel.image {

@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,44 +19,20 @@
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6uL-jV-R2x">
                         <rect key="frame" x="0.0" y="0.0" width="338" height="349"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                <integer key="value" value="10"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
                     </imageView>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="omH-3D-jdq">
-                        <rect key="frame" x="0.0" y="0.0" width="338" height="349"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                <integer key="value" value="10"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="omH-3D-jdq" firstAttribute="top" secondItem="7Rv-6w-jZ7" secondAttribute="top" id="2hd-Zh-63L"/>
-                    <constraint firstAttribute="bottom" secondItem="omH-3D-jdq" secondAttribute="bottom" id="7d7-ve-F8g"/>
-                    <constraint firstItem="omH-3D-jdq" firstAttribute="leading" secondItem="7Rv-6w-jZ7" secondAttribute="leading" id="GGM-BD-PoB"/>
                     <constraint firstAttribute="bottom" secondItem="6uL-jV-R2x" secondAttribute="bottom" id="HoF-MP-lGf"/>
                     <constraint firstAttribute="trailing" secondItem="6uL-jV-R2x" secondAttribute="trailing" id="Jh3-im-8qe"/>
                     <constraint firstItem="6uL-jV-R2x" firstAttribute="leading" secondItem="7Rv-6w-jZ7" secondAttribute="leading" id="R2g-W0-5VK"/>
-                    <constraint firstAttribute="trailing" secondItem="omH-3D-jdq" secondAttribute="trailing" id="Xgg-Lb-0Jm"/>
                     <constraint firstItem="6uL-jV-R2x" firstAttribute="top" secondItem="7Rv-6w-jZ7" secondAttribute="top" id="uoD-ZT-stA"/>
                 </constraints>
             </collectionViewCellContentView>
             <size key="customSize" width="338" height="349"/>
             <connections>
-                <outlet property="cardBack" destination="omH-3D-jdq" id="ltd-ua-b3B"/>
                 <outlet property="imageView" destination="6uL-jV-R2x" id="k2q-h7-Fl9"/>
             </connections>
             <point key="canvasLocation" x="-39" y="-151"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

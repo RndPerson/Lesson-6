@@ -11,7 +11,16 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var uploadImage: UIButton!
+    
     var photos = [Photo]()
+    
+    
+    @IBAction func uploadImage(_ sender: Any) {
+        setupPhotos()
+        DispatchQueue.main.async {
+        self.collectionView.reloadData()}
+    }
     
     
     override func viewDidLoad() {
@@ -19,9 +28,7 @@ class ViewController: UIViewController {
         collectionView.register(UINib(nibName: "ImageCell", bundle: nil), forCellWithReuseIdentifier: "ImageCell")
         collectionView.dataSource = self
         collectionView.delegate = self
-        setupPhotos()
-        DispatchQueue.main.async {
-        self.collectionView.reloadData()}    }
+    }
     
     private func setupPhotos() {
         guard let imageURL = URL(string: "https://pixabay.com/api/?key=19616972-a7ed02b324f20e470f79bf362&q=red+cars&image_type=photo") else { return }
@@ -58,7 +65,11 @@ extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! ImageCell
         
-        cell.flipView()
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let collectionViewController = storyboard.instantiateViewController(withIdentifier: "ImageViewController") as! ImageViewController
+        collectionViewController.image = cell.imageView.image
+        
+        self.navigationController?.pushViewController(collectionViewController, animated: true)
     }
 }
 
